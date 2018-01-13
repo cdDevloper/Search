@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="BQo-71-A2a">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mycity.png" translatesAutoresizingMaskIntoConstraints="NO" id="Vs5-dP-1hw">
+                                <rect key="frame" x="126" y="61" width="123" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="GL0-Cy-3zV"/>
+                                    <constraint firstAttribute="width" constant="123" id="N2z-9S-Y0y"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make Your Bussiness Simple With Us." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N3d-Qa-ZAG">
+                                <rect key="frame" x="34.5" y="206" width="305.5" height="23.5"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="BQo-71-A2a" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="4Gy-4T-6Oe"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="BQo-71-A2a" secondAttribute="bottom" id="8kA-Nz-juj"/>
+                            <constraint firstItem="Vs5-dP-1hw" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="41" id="Jht-zD-iBd"/>
+                            <constraint firstAttribute="trailing" secondItem="BQo-71-A2a" secondAttribute="trailing" id="QH6-ZE-HgA"/>
+                            <constraint firstItem="Vs5-dP-1hw" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="SN6-tl-BBl"/>
+                            <constraint firstItem="N3d-Qa-ZAG" firstAttribute="centerX" secondItem="Vs5-dP-1hw" secondAttribute="centerX" id="aXR-Cl-ZZM"/>
+                            <constraint firstItem="BQo-71-A2a" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="nHe-Fk-vtZ"/>
+                            <constraint firstItem="N3d-Qa-ZAG" firstAttribute="top" secondItem="Vs5-dP-1hw" secondAttribute="bottom" constant="17" id="o11-TN-UcZ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg.png" width="414" height="735"/>
+        <image name="mycity.png" width="907" height="907"/>
+    </resources>
+</document>
