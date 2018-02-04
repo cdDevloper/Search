@@ -8,9 +8,6 @@
 
 import UIKit
 
-
-
-
 class RegisterViewController: UIViewController {
 
     @IBOutlet weak var txtMobNum: UITextField!
@@ -64,7 +61,6 @@ class RegisterViewController: UIViewController {
     }
     
     
-
 }
 
 extension RegisterViewController : SelectCityDelegate{

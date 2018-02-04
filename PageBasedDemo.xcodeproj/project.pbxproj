@@ -106,6 +106,8 @@
 		18C5256E00001B360088F19F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C5256D00001B360088F19F /* RegisterViewController.swift */; };
 		D15664CD20270CBE003545D9 /* home123.png in Resources */ = {isa = PBXBuildFile; fileRef = D15664CC20270CBE003545D9 /* home123.png */; };
 		D15664CF20271312003545D9 /* ChangeCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15664CE20271312003545D9 /* ChangeCityViewController.swift */; };
+		D1B39CBB20278CD3006C7540 /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B39CBA20278CD3006C7540 /* ProductListViewController.swift */; };
+		D1B39CBD2027941F006C7540 /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B39CBC2027941F006C7540 /* ProductDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -231,6 +233,8 @@
 		18C5256D00001B360088F19F /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		D15664CC20270CBE003545D9 /* home123.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home123.png; path = Images/home123.png; sourceTree = "<group>"; };
 		D15664CE20271312003545D9 /* ChangeCityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeCityViewController.swift; sourceTree = "<group>"; };
+		D1B39CBA20278CD3006C7540 /* ProductListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
+		D1B39CBC2027941F006C7540 /* ProductDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -305,6 +309,8 @@
 				188CC75520054699000B9C17 /* StoreDetailViewController.swift */,
 				187B788920069E2B00A1044A /* VideoListViewController.swift */,
 				D15664CE20271312003545D9 /* ChangeCityViewController.swift */,
+				D1B39CBA20278CD3006C7540 /* ProductListViewController.swift */,
+				D1B39CBC2027941F006C7540 /* ProductDetailViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -670,6 +676,7 @@
 			files = (
 				188CC76520054D3E000B9C17 /* MenuItemView.swift in Sources */,
 				188CC76320054D3E000B9C17 /* CAPSPageMenu.swift in Sources */,
+				D1B39CBD2027941F006C7540 /* ProductDetailViewController.swift in Sources */,
 				1899BD381FFEC3670051E139 /* MainTypeCollectionViewCell.swift in Sources */,
 				183A586E2002050100F47E0B /* tableViewCell.swift in Sources */,
 				1899BD371FFEC3670051E139 /* ZoomAnimatedTransitioning.swift in Sources */,
@@ -686,6 +693,7 @@
 				1899BD3A1FFEC3670051E139 /* SlideViewCollectionReusableView.swift in Sources */,
 				188CC75620054699000B9C17 /* StoreDetailViewController.swift in Sources */,
 				1899BD311FFEC3670051E139 /* FullScreenSlideshowViewController.swift in Sources */,
+				D1B39CBB20278CD3006C7540 /* ProductListViewController.swift in Sources */,
 				18C52542000002CF0088F19F /* ModelController.swift in Sources */,
 				188CC75F20054D3E000B9C17 /* CAPSPageMenu+Options.swift in Sources */,
 				188CC76120054D3E000B9C17 /* CAPSPageMenu+UIGestureRecognizerDelegate.swift in Sources */,

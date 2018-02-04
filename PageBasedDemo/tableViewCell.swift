@@ -16,14 +16,25 @@ class tableViewCell: UITableViewCell {
     
     @IBOutlet weak var imgSlideView: ImageSlideshow!
     
+    
+    
     @IBOutlet weak var imgCall: UIImageView!
-    @IBOutlet weak var lblStoreAddess: UILabel!
     @IBOutlet weak var imgMap: UIImageView!
     @IBOutlet weak var imgDetail: UIImageView!
-    @IBOutlet weak var lblStoreAddress: UILabel!
-    @IBOutlet weak var lblStoreName: UILabel!
     
-    @IBOutlet weak var imgStore: UIImageView!
+    @IBOutlet weak var lblStoreAddess: UILabel!
+    @IBOutlet weak var lblStoreCat: UILabel!
+    @IBOutlet weak var lblStoreName: UILabel!
+    @IBOutlet weak var lblMobNum: UILabel!
+    
+    //ProductListCell
+    @IBOutlet weak var imgProduct: UIImageView!
+    
+    @IBOutlet weak var lblProductName: UILabel!
+    @IBOutlet weak var lblActualRate: UILabel!
+    @IBOutlet weak var lblDiscountRate: UILabel!
+    
+    //@IBOutlet weak var imgStore: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -36,6 +47,8 @@ class tableViewCell: UITableViewCell {
     }
 
 }
+
+
 class OfferMainTblCell: UITableViewCell {
     @IBOutlet weak var imgCat: UIImageView!
     @IBOutlet weak var lblCatNam: UILabel!

@@ -10,7 +10,6 @@ import UIKit
 
 class SubCategoryViewController: UIViewController {
     
-    
     @IBOutlet weak var tblView: UITableView!
     @IBOutlet weak var lblTitle: UILabel!
     var strTitle = ""
@@ -30,6 +29,7 @@ class SubCategoryViewController: UIViewController {
         print(currentPage)
     }
 
+     //Mark: IBAction Methods
     @IBAction func btnSearchPress(_ sender: Any) {
     }
     
