@@ -36,3 +36,7 @@ class tableViewCell: UITableViewCell {
     }
 
 }
+class OfferMainTblCell: UITableViewCell {
+    @IBOutlet weak var imgCat: UIImageView!
+    @IBOutlet weak var lblCatNam: UILabel!
+}

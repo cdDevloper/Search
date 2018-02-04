@@ -16,6 +16,10 @@ class MainViewController: UIViewController {
     
     var arrCat:[String] = ["MyCity","Special Offers","Emergency","Movies & Events","Hospital","Medical","Mobile Shop","Computers","Cloth Shop","Shoes","Hotel","Pizza","Tours & Travels","Gift & Cosmetics","Bazaar & Grocery","Business & Jobs","B & D","Construction","Advocate","Financial","Jewellery Shop","Design & Print","Home Products","Home Service","Educational","All Agents","Sweet Mart","Coldrinks","Hardware & Ceramics", "Home Decor & Furniture","Marriage & Events","Transport & Courier","Gym & Yoga","Parlours","Automobiles","Industrial","Opticals","Bags","Agriculture","Pet Animals"]
     
+    
+     @IBOutlet weak var lblCity: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -31,6 +35,13 @@ class MainViewController: UIViewController {
     func didTap()
     {
        print(currentPage)
+    }
+    
+    //MARK: IBAction Methods
+    @IBAction func btnChangeCityPress(_ sender: Any) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "ChangeCityViewController") as! ChangeCityViewController
+        
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
 
@@ -109,8 +120,21 @@ extension MainViewController:UICollectionViewDelegate,UICollectionViewDataSource
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "SubCategoryViewController") as! SubCategoryViewController
             vc.strTitle = arrCat[indexPath.row]
             self.navigationController?.pushViewController(vc, animated: true)
+        }else if indexPath.row == 1{
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "SubCategoryViewController") as! SubCategoryViewController
+            vc.strTitle = arrCat[indexPath.row]
+            vc.flgViewController == "offer"
+            self.navigationController?.pushViewController(vc, animated: true)
+           
         }
         
         
+    }
+}
+
+//Mark: Custum Methods
+extension MainViewController : SelectCityDelegate{
+    func selectedCity(cityName: String) {
+        lblCity.text = cityName
     }
 }

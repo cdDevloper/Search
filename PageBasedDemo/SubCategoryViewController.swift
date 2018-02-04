@@ -15,10 +15,13 @@ class SubCategoryViewController: UIViewController {
     @IBOutlet weak var lblTitle: UILabel!
     var strTitle = ""
     var currentPage:Int = 0
+    
+    var flgViewController = ""
     override func viewDidLoad() {
         super.viewDidLoad()
         lblTitle.text = strTitle
         tblView.separatorStyle = .none
+        
     }
     
     //Mark: Custum Methods
@@ -45,14 +48,23 @@ extension SubCategoryViewController:UITableViewDelegate,UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
         return 4
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "tblCell") as! tableViewCell
+       
         
-        cell.lblSubCatName.text = "Subcategory" + " \(indexPath.row)"
-        return cell
+        if flgViewController == "offer"{
+             let cell = tableView.dequeueReusableCell(withIdentifier: "tblCell") as! tableViewCell
+            cell.lblSubCatName.text = "Subcategory" + " \(indexPath.row)"
+            return cell
+        }else{
+             let cell = tableView.dequeueReusableCell(withIdentifier: "OfferMainCell") as! OfferMainTblCell
+            cell.lblCatNam.text = "Offer " + " \(indexPath.row)"
+            return cell
+        }
+        
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {

@@ -104,6 +104,8 @@
 		18C52555000002CF0088F19F /* PageBasedDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C52554000002CF0088F19F /* PageBasedDemoTests.swift */; };
 		18C52560000002CF0088F19F /* PageBasedDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C5255F000002CF0088F19F /* PageBasedDemoUITests.swift */; };
 		18C5256E00001B360088F19F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C5256D00001B360088F19F /* RegisterViewController.swift */; };
+		D15664CD20270CBE003545D9 /* home123.png in Resources */ = {isa = PBXBuildFile; fileRef = D15664CC20270CBE003545D9 /* home123.png */; };
+		D15664CF20271312003545D9 /* ChangeCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15664CE20271312003545D9 /* ChangeCityViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -227,6 +229,8 @@
 		18C5255F000002CF0088F19F /* PageBasedDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageBasedDemoUITests.swift; sourceTree = "<group>"; };
 		18C52561000002CF0088F19F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18C5256D00001B360088F19F /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		D15664CC20270CBE003545D9 /* home123.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home123.png; path = Images/home123.png; sourceTree = "<group>"; };
+		D15664CE20271312003545D9 /* ChangeCityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeCityViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -300,6 +304,7 @@
 				18959F4F2003FFA700D86ADF /* StoreListViewController.swift */,
 				188CC75520054699000B9C17 /* StoreDetailViewController.swift */,
 				187B788920069E2B00A1044A /* VideoListViewController.swift */,
+				D15664CE20271312003545D9 /* ChangeCityViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -391,6 +396,7 @@
 		189F4DC02001594400B5EE45 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				D15664CC20270CBE003545D9 /* home123.png */,
 				188CC75320053CDF000B9C17 /* more.png */,
 				188CC74D20053C01000B9C17 /* map.png */,
 				188CC74E20053C01000B9C17 /* moreInfo.png */,
@@ -635,6 +641,7 @@
 				189F4D9C20014E3A00B5EE45 /* cloths.jpg in Resources */,
 				18C52545000002CF0088F19F /* Main.storyboard in Resources */,
 				189F4DAB20014E3A00B5EE45 /* hotel.jpg in Resources */,
+				D15664CD20270CBE003545D9 /* home123.png in Resources */,
 				189F4DA120014E3A00B5EE45 /* educational.jpg in Resources */,
 				189F4DBE20014FA700B5EE45 /* hospital.jpg in Resources */,
 			);
@@ -669,6 +676,7 @@
 				188CC76020054D3E000B9C17 /* CAPSPageMenu+UIConfiguration.swift in Sources */,
 				188CC76420054D3E000B9C17 /* CAPSPageMenuConfiguration.swift in Sources */,
 				18C5253E000002CF0088F19F /* RootViewController.swift in Sources */,
+				D15664CF20271312003545D9 /* ChangeCityViewController.swift in Sources */,
 				18C5256E00001B360088F19F /* RegisterViewController.swift in Sources */,
 				183A587620022ADF00F47E0B /* SubCategoryViewController.swift in Sources */,
 				187B788A20069E2B00A1044A /* VideoListViewController.swift in Sources */,
