@@ -21,7 +21,7 @@ class SelectCityViewController: UIViewController {
     var arrCity = ["Solapur","Gulbarg","Hubali","Kholapur","Sangli-Miraj","Parli-Vajinath","Nanded","Satara","Osmanabad","Pune","Munbai","Barshi"]
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        tblView.separatorStyle = .none
     }
     
     @IBAction func btnClosePress(_ sender: Any) {
@@ -39,6 +39,7 @@ extension SelectCityViewController:UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cityCell") as! tableViewCell
         cell.lblCityName.text = arrCity[indexPath.row]
+        cell.selectionStyle = .none
         return cell
     }
     

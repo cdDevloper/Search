@@ -19,12 +19,12 @@ class ChangeCityViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-
     }
     
     // MARK: - IB Action Method
     @IBAction func btnProccedPress(_ sender: Any) {
         self.delegate?.changeCity(cityName: lblSelCity.text!)
+        self.navigationController?.popViewController(animated: true)
     }
     
     @IBAction func btnSelectCityPress(_ sender: Any) {
@@ -35,9 +35,8 @@ class ChangeCityViewController: UIViewController {
     }
     
     @IBAction func btnbackPress(_ sender: Any) {
-        
+        navigationController?.popViewController(animated: true)
     }
-
 
 }
 

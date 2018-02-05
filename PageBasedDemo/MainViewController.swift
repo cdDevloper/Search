@@ -119,16 +119,14 @@ extension MainViewController:UICollectionViewDelegate,UICollectionViewDataSource
         if indexPath.row > 1{
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "SubCategoryViewController") as! SubCategoryViewController
             vc.strTitle = arrCat[indexPath.row]
+            vc.flgViewController = ""
             self.navigationController?.pushViewController(vc, animated: true)
         }else if indexPath.row == 1{
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "SubCategoryViewController") as! SubCategoryViewController
             vc.strTitle = arrCat[indexPath.row]
-            vc.flgViewController == "offer"
+            vc.flgViewController = "offer"
             self.navigationController?.pushViewController(vc, animated: true)
-           
         }
-        
-        
     }
 }
 

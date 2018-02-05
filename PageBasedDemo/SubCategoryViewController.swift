@@ -53,15 +53,16 @@ extension SubCategoryViewController:UITableViewDelegate,UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-       
-        
+    
         if flgViewController == "offer"{
-             let cell = tableView.dequeueReusableCell(withIdentifier: "tblCell") as! tableViewCell
-            cell.lblSubCatName.text = "Subcategory" + " \(indexPath.row)"
+            let cell = tableView.dequeueReusableCell(withIdentifier: "OfferMainCell") as! OfferMainTblCell
+            cell.selectionStyle = .none
+            cell.lblCatNam.text = "Product " + " \(indexPath.row)"
             return cell
         }else{
-             let cell = tableView.dequeueReusableCell(withIdentifier: "OfferMainCell") as! OfferMainTblCell
-            cell.lblCatNam.text = "Offer " + " \(indexPath.row)"
+            let cell = tableView.dequeueReusableCell(withIdentifier: "tblCell") as! tableViewCell
+            cell.lblSubCatName.text = "Subcategory" + " \(indexPath.row)"
+            cell.selectionStyle = .none
             return cell
         }
         
@@ -98,9 +99,16 @@ extension SubCategoryViewController:UITableViewDelegate,UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "StoreListViewController") as! StoreListViewController
-        vc.strTitle = "Subcategory" + " \(indexPath.row)"
-        self.navigationController?.pushViewController(vc, animated: true)
+        if flgViewController == "offer"{
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "ProductListViewController") as! ProductListViewController
+            vc.strTitle = "Product" + " \(indexPath.row)"
+            self.navigationController?.pushViewController(vc, animated: true)
+        }else{
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "StoreListViewController") as! StoreListViewController
+            vc.strTitle = "Subcategory" + " \(indexPath.row)"
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+       
     }
     
      func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {

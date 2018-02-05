@@ -17,7 +17,7 @@ class ProductListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        tblView.separatorStyle = .none
     }
     
     //Mark: IBAction Methods
@@ -38,16 +38,19 @@ extension ProductListViewController:UITableViewDelegate,UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "OfferMainCell") as! OfferMainTblCell
-            cell.lblCatNam.text = "Offer " + " \(indexPath.row)"
+            let cell = tableView.dequeueReusableCell(withIdentifier: "productListCell") as! tableViewCell
+            cell.lblProductName.text = "Product " + " \(indexPath.row)"
+            cell.imgProduct.image    = UIImage(named: "")
+            cell.lblActualRate.text = "₹2000"
+            cell.lblDiscountRate.text = "₹3000"
+            cell.selectionStyle = .none
+        
             return cell
-        
-        
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "StoreListViewController") as! StoreListViewController
-        vc.strTitle = "Subcategory" + " \(indexPath.row)"
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "ProductDetailViewController") as! ProductDetailViewController
+        vc.strTitle = "Product" + " \(indexPath.row)"
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
