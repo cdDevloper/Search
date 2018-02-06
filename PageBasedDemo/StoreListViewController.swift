@@ -18,7 +18,7 @@ class StoreListViewController: UIViewController {
         super.viewDidLoad()
         lblTitle.text = strTitle
         tblView.separatorStyle = .none
-        tblView.estimatedRowHeight = 128.0
+        tblView.estimatedRowHeight = 176.0
         tblView.rowHeight = UITableViewAutomaticDimension
     }
     
@@ -59,11 +59,6 @@ extension StoreListViewController:UITableViewDelegate,UITableViewDataSource{
         return cell
     }
     
-//    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-//        let cell = tableView.dequeueReusableCell(withIdentifier: "slideCell") as! tableViewCell
-//       
-//        return cell
-//    }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "StoreDetailViewController") as! StoreDetailViewController
