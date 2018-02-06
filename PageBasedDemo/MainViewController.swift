@@ -40,7 +40,7 @@ class MainViewController: UIViewController {
     //MARK: IBAction Methods
     @IBAction func btnChangeCityPress(_ sender: Any) {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "ChangeCityViewController") as! ChangeCityViewController
-        
+        vc.delegate = self
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }
@@ -131,8 +131,9 @@ extension MainViewController:UICollectionViewDelegate,UICollectionViewDataSource
 }
 
 //Mark: Custum Methods
-extension MainViewController : SelectCityDelegate{
-    func selectedCity(cityName: String) {
+extension MainViewController : ChangeCityDelegate{
+    func changeCity(cityName: String) {
         lblCity.text = cityName
     }
+
 }

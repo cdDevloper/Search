@@ -21,6 +21,14 @@ class SubCategoryViewController: UIViewController {
         lblTitle.text = strTitle
         tblView.separatorStyle = .none
         
+        
+        if flgViewController == "offer"{
+            tblView.estimatedRowHeight = 216.0
+            tblView.rowHeight          = UITableViewAutomaticDimension
+        }else{
+            tblView.estimatedRowHeight = 44.0
+            tblView.rowHeight          = UITableViewAutomaticDimension
+        }
     }
     
     //Mark: Custum Methods

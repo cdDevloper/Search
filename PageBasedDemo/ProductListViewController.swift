@@ -17,7 +17,10 @@ class ProductListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        lblTitle.text = strTitle
         tblView.separatorStyle = .none
+        tblView.estimatedRowHeight = 93.0
+        tblView.rowHeight          = UITableViewAutomaticDimension
     }
     
     //Mark: IBAction Methods
@@ -40,7 +43,7 @@ extension ProductListViewController:UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             let cell = tableView.dequeueReusableCell(withIdentifier: "productListCell") as! tableViewCell
             cell.lblProductName.text = "Product " + " \(indexPath.row)"
-            cell.imgProduct.image    = UIImage(named: "")
+            cell.imgProduct.image    = UIImage(named: "hotel.jpg")
             cell.lblActualRate.text = "₹2000"
             cell.lblDiscountRate.text = "₹3000"
             cell.selectionStyle = .none
