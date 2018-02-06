@@ -31,6 +31,7 @@ class tableViewCell: UITableViewCell {
     @IBOutlet weak var imgProduct: UIImageView!
     
     @IBOutlet weak var lblProductName: UILabel!
+    @IBOutlet weak var lblProductDetail: UILabel!
     @IBOutlet weak var lblActualRate: UILabel!
     @IBOutlet weak var lblDiscountRate: UILabel!
     

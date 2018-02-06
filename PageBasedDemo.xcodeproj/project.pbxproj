@@ -106,6 +106,7 @@
 		18C5256E00001B360088F19F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C5256D00001B360088F19F /* RegisterViewController.swift */; };
 		D15664CD20270CBE003545D9 /* home123.png in Resources */ = {isa = PBXBuildFile; fileRef = D15664CC20270CBE003545D9 /* home123.png */; };
 		D15664CF20271312003545D9 /* ChangeCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15664CE20271312003545D9 /* ChangeCityViewController.swift */; };
+		D18AE6FD202A28F400DF5246 /* BookOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18AE6FC202A28F400DF5246 /* BookOrderViewController.swift */; };
 		D1B39CBB20278CD3006C7540 /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B39CBA20278CD3006C7540 /* ProductListViewController.swift */; };
 		D1B39CBD2027941F006C7540 /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B39CBC2027941F006C7540 /* ProductDetailViewController.swift */; };
 /* End PBXBuildFile section */
@@ -233,6 +234,7 @@
 		18C5256D00001B360088F19F /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		D15664CC20270CBE003545D9 /* home123.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home123.png; path = Images/home123.png; sourceTree = "<group>"; };
 		D15664CE20271312003545D9 /* ChangeCityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeCityViewController.swift; sourceTree = "<group>"; };
+		D18AE6FC202A28F400DF5246 /* BookOrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookOrderViewController.swift; sourceTree = "<group>"; };
 		D1B39CBA20278CD3006C7540 /* ProductListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
 		D1B39CBC2027941F006C7540 /* ProductDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -311,6 +313,7 @@
 				D15664CE20271312003545D9 /* ChangeCityViewController.swift */,
 				D1B39CBA20278CD3006C7540 /* ProductListViewController.swift */,
 				D1B39CBC2027941F006C7540 /* ProductDetailViewController.swift */,
+				D18AE6FC202A28F400DF5246 /* BookOrderViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -701,6 +704,7 @@
 				183A586C2002038200F47E0B /* SelectCityViewController.swift in Sources */,
 				189F4DC4200161B500B5EE45 /* textField.swift in Sources */,
 				1899BD341FFEC3670051E139 /* InputSource.swift in Sources */,
+				D18AE6FD202A28F400DF5246 /* BookOrderViewController.swift in Sources */,
 				1899BD391FFEC3670051E139 /* MainViewController.swift in Sources */,
 				1899BD321FFEC3670051E139 /* ImageSlideshow.swift in Sources */,
 				18959F502003FFA700D86ADF /* StoreListViewController.swift in Sources */,

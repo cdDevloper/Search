@@ -42,10 +42,11 @@ extension ProductListViewController:UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             let cell = tableView.dequeueReusableCell(withIdentifier: "productListCell") as! tableViewCell
-            cell.lblProductName.text = "Product " + " \(indexPath.row)"
-            cell.imgProduct.image    = UIImage(named: "hotel.jpg")
-            cell.lblActualRate.text = "₹2000"
+            cell.lblProductName.text  = "Product " + " \(indexPath.row)"
+            cell.imgProduct.image     = UIImage(named: "hotel.jpg")
+            cell.lblActualRate.text   = "₹2000"
             cell.lblDiscountRate.text = "₹3000"
+            cell.lblProductDetail.text     = "aaaaa  aaaaaaaaaaaaaa aaaaaaaa aaaaaa aaaaaa aaaaa"
             cell.selectionStyle = .none
         
             return cell
