@@ -76,44 +76,44 @@ extension MainViewController:UICollectionViewDelegate,UICollectionViewDataSource
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         
-        switch kind {
-        
-        case UICollectionElementKindSectionHeader:
-            
-            let cell = collectionView.dequeueReusableSupplementaryView(ofKind: kind,
-                                                                             withReuseIdentifier: "imgSlideViewCell",
-                                                                             for: indexPath) as! SlideViewCollectionReusableView
-            
-           // cell.imgSlideView.layer.borderColor = color.ImgborderCoor.cgColor
-            cell.imgSlideView.layer.borderWidth = 1
-            cell.imgSlideView.setImageInputs([ImageSource(image: UIImage(named: "img1.png")!),
-                                             ImageSource(image: UIImage(named: "img2.JPG")!),ImageSource(image: UIImage(named: "img3.jpg")!)])
-            cell.imgSlideView.backgroundColor = UIColor.white
-            cell.imgSlideView.slideshowInterval = 5.0
-            cell.imgSlideView.pageControlPosition = PageControlPosition.insideScrollView
-            cell.imgSlideView.pageControl.currentPageIndicatorTintColor = UIColor.blue
-            cell.imgSlideView.pageControl.pageIndicatorTintColor = UIColor.white
-            cell.imgSlideView.contentScaleMode = UIViewContentMode.scaleAspectFill
-            // optional way to show activity indicator during image load (skipping the line will show no activity indicator)
-            
-
-            cell.imgSlideView.activityIndicator = DefaultActivityIndicator()
-            
-            cell.imgSlideView.currentPageChanged = { page in
-                self.currentPage = page
-                print("current page:", page)
+            switch kind {
+                
+            case UICollectionElementKindSectionHeader:
+                
+                let cell = collectionView.dequeueReusableSupplementaryView(ofKind: kind,
+                                                                           withReuseIdentifier: "imgSlideViewCell",
+                                                                           for: indexPath) as! SlideViewCollectionReusableView
+                
+                // cell.imgSlideView.layer.borderColor = color.ImgborderCoor.cgColor
+                cell.imgSlideView.layer.borderWidth = 1
+                cell.imgSlideView.setImageInputs([ImageSource(image: UIImage(named: "img1.png")!),
+                                                  ImageSource(image: UIImage(named: "img2.JPG")!),ImageSource(image: UIImage(named: "img3.jpg")!)])
+                cell.imgSlideView.backgroundColor = UIColor.white
+                cell.imgSlideView.slideshowInterval = 5.0
+                cell.imgSlideView.pageControlPosition = PageControlPosition.insideScrollView
+                cell.imgSlideView.pageControl.currentPageIndicatorTintColor = UIColor.blue
+                cell.imgSlideView.pageControl.pageIndicatorTintColor = UIColor.white
+                cell.imgSlideView.contentScaleMode = UIViewContentMode.scaleAspectFill
+                // optional way to show activity indicator during image load (skipping the line will show no activity indicator)
+                
+                
+                cell.imgSlideView.activityIndicator = DefaultActivityIndicator()
+                
+                cell.imgSlideView.currentPageChanged = { page in
+                    self.currentPage = page
+                    print("current page:", page)
+                }
+                
+                // try out other sources such as `afNetworkingSource`, `alamofireSource` or `sdWebImageSource` or `kingfisherSource`
+                
+                let recognizer = UITapGestureRecognizer(target: self, action: #selector(self.didTap))
+                cell.imgSlideView.addGestureRecognizer(recognizer)
+                return cell
+            default:
+                
+                assert(false, "Unexpected element kind")
             }
-            
-            // try out other sources such as `afNetworkingSource`, `alamofireSource` or `sdWebImageSource` or `kingfisherSource`
-            
-            let recognizer = UITapGestureRecognizer(target: self, action: #selector(self.didTap))
-            cell.imgSlideView.addGestureRecognizer(recognizer)
-           return cell
-        default:
-            
-            assert(false, "Unexpected element kind")
         }
-    }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         if indexPath.row > 1{
