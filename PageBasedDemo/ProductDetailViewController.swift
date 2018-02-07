@@ -60,6 +60,11 @@ class ProductDetailViewController: UIViewController {
     @IBAction func btnOKPress(_ sender: Any) {
         hideShopInfoPopup()
     }
-
+    
+    
+    @IBAction func btnBookNowPress(_ sender: Any) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "BookOrderViewController") as! BookOrderViewController
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 
 }
