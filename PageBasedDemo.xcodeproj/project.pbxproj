@@ -104,9 +104,23 @@
 		18C52555000002CF0088F19F /* PageBasedDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C52554000002CF0088F19F /* PageBasedDemoTests.swift */; };
 		18C52560000002CF0088F19F /* PageBasedDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C5255F000002CF0088F19F /* PageBasedDemoUITests.swift */; };
 		18C5256E00001B360088F19F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C5256D00001B360088F19F /* RegisterViewController.swift */; };
+		54EB9BDFF41C3A2E931906A8 /* Pods_PageBasedDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8F5F14440803571D4B43C4B /* Pods_PageBasedDemo.framework */; };
 		D15664CD20270CBE003545D9 /* home123.png in Resources */ = {isa = PBXBuildFile; fileRef = D15664CC20270CBE003545D9 /* home123.png */; };
 		D15664CF20271312003545D9 /* ChangeCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15664CE20271312003545D9 /* ChangeCityViewController.swift */; };
 		D18AE6FD202A28F400DF5246 /* BookOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18AE6FC202A28F400DF5246 /* BookOrderViewController.swift */; };
+		D196DB47202B7AA800B11CE3 /* bgImg.png in Resources */ = {isa = PBXBuildFile; fileRef = D196DB3C202B7AA800B11CE3 /* bgImg.png */; };
+		D196DB48202B7AA800B11CE3 /* cityGif.gif in Resources */ = {isa = PBXBuildFile; fileRef = D196DB3D202B7AA800B11CE3 /* cityGif.gif */; };
+		D196DB49202B7AA800B11CE3 /* firstscreen.png in Resources */ = {isa = PBXBuildFile; fileRef = D196DB3E202B7AA800B11CE3 /* firstscreen.png */; };
+		D196DB4A202B7AA800B11CE3 /* furniture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D196DB3F202B7AA800B11CE3 /* furniture.jpg */; };
+		D196DB4B202B7AA800B11CE3 /* gymyoga.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D196DB40202B7AA800B11CE3 /* gymyoga.jpg */; };
+		D196DB4C202B7AA900B11CE3 /* hardwareciramic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D196DB41202B7AA800B11CE3 /* hardwareciramic.jpg */; };
+		D196DB4D202B7AA900B11CE3 /* jewelry.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D196DB42202B7AA800B11CE3 /* jewelry.jpg */; };
+		D196DB4E202B7AA900B11CE3 /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = D196DB43202B7AA800B11CE3 /* map.png */; };
+		D196DB4F202B7AA900B11CE3 /* marriage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D196DB44202B7AA800B11CE3 /* marriage.jpg */; };
+		D196DB50202B7AA900B11CE3 /* minibazar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D196DB45202B7AA800B11CE3 /* minibazar.jpg */; };
+		D196DB51202B7AA900B11CE3 /* parlour.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D196DB46202B7AA800B11CE3 /* parlour.jpg */; };
+		D196DB53202B83DE00B11CE3 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D196DB52202B83DE00B11CE3 /* MapViewController.swift */; };
+		D196DB55202B89A000B11CE3 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D196DB54202B89A000B11CE3 /* InfoViewController.swift */; };
 		D1B39CBB20278CD3006C7540 /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B39CBA20278CD3006C7540 /* ProductListViewController.swift */; };
 		D1B39CBD2027941F006C7540 /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B39CBC2027941F006C7540 /* ProductDetailViewController.swift */; };
 /* End PBXBuildFile section */
@@ -232,11 +246,27 @@
 		18C5255F000002CF0088F19F /* PageBasedDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageBasedDemoUITests.swift; sourceTree = "<group>"; };
 		18C52561000002CF0088F19F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18C5256D00001B360088F19F /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		A9C7F17EE3AA26E87B2401C9 /* Pods-PageBasedDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PageBasedDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-PageBasedDemo/Pods-PageBasedDemo.release.xcconfig"; sourceTree = "<group>"; };
+		C8F5F14440803571D4B43C4B /* Pods_PageBasedDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PageBasedDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D15664CC20270CBE003545D9 /* home123.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home123.png; path = Images/home123.png; sourceTree = "<group>"; };
 		D15664CE20271312003545D9 /* ChangeCityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeCityViewController.swift; sourceTree = "<group>"; };
 		D18AE6FC202A28F400DF5246 /* BookOrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookOrderViewController.swift; sourceTree = "<group>"; };
+		D196DB3C202B7AA800B11CE3 /* bgImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bgImg.png; sourceTree = "<group>"; };
+		D196DB3D202B7AA800B11CE3 /* cityGif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = cityGif.gif; sourceTree = "<group>"; };
+		D196DB3E202B7AA800B11CE3 /* firstscreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = firstscreen.png; sourceTree = "<group>"; };
+		D196DB3F202B7AA800B11CE3 /* furniture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = furniture.jpg; sourceTree = "<group>"; };
+		D196DB40202B7AA800B11CE3 /* gymyoga.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gymyoga.jpg; sourceTree = "<group>"; };
+		D196DB41202B7AA800B11CE3 /* hardwareciramic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hardwareciramic.jpg; sourceTree = "<group>"; };
+		D196DB42202B7AA800B11CE3 /* jewelry.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jewelry.jpg; sourceTree = "<group>"; };
+		D196DB43202B7AA800B11CE3 /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
+		D196DB44202B7AA800B11CE3 /* marriage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = marriage.jpg; sourceTree = "<group>"; };
+		D196DB45202B7AA800B11CE3 /* minibazar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = minibazar.jpg; sourceTree = "<group>"; };
+		D196DB46202B7AA800B11CE3 /* parlour.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = parlour.jpg; sourceTree = "<group>"; };
+		D196DB52202B83DE00B11CE3 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		D196DB54202B89A000B11CE3 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		D1B39CBA20278CD3006C7540 /* ProductListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
 		D1B39CBC2027941F006C7540 /* ProductDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
+		F03021872E3829B87AFD7164 /* Pods-PageBasedDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PageBasedDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PageBasedDemo/Pods-PageBasedDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,6 +274,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54EB9BDFF41C3A2E931906A8 /* Pods_PageBasedDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +345,8 @@
 				D1B39CBA20278CD3006C7540 /* ProductListViewController.swift */,
 				D1B39CBC2027941F006C7540 /* ProductDetailViewController.swift */,
 				D18AE6FC202A28F400DF5246 /* BookOrderViewController.swift */,
+				D196DB52202B83DE00B11CE3 /* MapViewController.swift */,
+				D196DB54202B89A000B11CE3 /* InfoViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -321,6 +354,17 @@
 		1899BD1D1FFEC3670051E139 /* DummyImages */ = {
 			isa = PBXGroup;
 			children = (
+				D196DB3C202B7AA800B11CE3 /* bgImg.png */,
+				D196DB3D202B7AA800B11CE3 /* cityGif.gif */,
+				D196DB3E202B7AA800B11CE3 /* firstscreen.png */,
+				D196DB3F202B7AA800B11CE3 /* furniture.jpg */,
+				D196DB40202B7AA800B11CE3 /* gymyoga.jpg */,
+				D196DB41202B7AA800B11CE3 /* hardwareciramic.jpg */,
+				D196DB42202B7AA800B11CE3 /* jewelry.jpg */,
+				D196DB43202B7AA800B11CE3 /* map.png */,
+				D196DB44202B7AA800B11CE3 /* marriage.jpg */,
+				D196DB45202B7AA800B11CE3 /* minibazar.jpg */,
+				D196DB46202B7AA800B11CE3 /* parlour.jpg */,
 				189F4DBD20014FA600B5EE45 /* hospital.jpg */,
 				189F4D6F20014E3A00B5EE45 /* advocate.jpg */,
 				189F4D7020014E3A00B5EE45 /* agents.jpg */,
@@ -432,6 +476,8 @@
 				18C52553000002CF0088F19F /* PageBasedDemoTests */,
 				18C5255E000002CF0088F19F /* PageBasedDemoUITests */,
 				18C52539000002CF0088F19F /* Products */,
+				FA8BF7D5A316C019CB66F697 /* Pods */,
+				C49024962F50EC3C7A2E839D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -482,6 +528,23 @@
 			path = PageBasedDemoUITests;
 			sourceTree = "<group>";
 		};
+		C49024962F50EC3C7A2E839D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C8F5F14440803571D4B43C4B /* Pods_PageBasedDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA8BF7D5A316C019CB66F697 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F03021872E3829B87AFD7164 /* Pods-PageBasedDemo.debug.xcconfig */,
+				A9C7F17EE3AA26E87B2401C9 /* Pods-PageBasedDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -489,9 +552,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18C52564000002CF0088F19F /* Build configuration list for PBXNativeTarget "PageBasedDemo" */;
 			buildPhases = (
+				28E8B7DFB4C4750A3FCFC141 /* [CP] Check Pods Manifest.lock */,
 				18C52534000002CF0088F19F /* Sources */,
 				18C52535000002CF0088F19F /* Frameworks */,
 				18C52536000002CF0088F19F /* Resources */,
+				E13D23499CCBE6439EAF3B9D /* [CP] Embed Pods Frameworks */,
+				835700EC3B74BA5499D755E5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -590,11 +656,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D196DB4E202B7AA900B11CE3 /* map.png in Resources */,
 				189F4DAD20014E3A00B5EE45 /* jewelry.png in Resources */,
 				189F4D9620014E3A00B5EE45 /* advocate.jpg in Resources */,
+				D196DB49202B7AA800B11CE3 /* firstscreen.png in Resources */,
+				D196DB4F202B7AA900B11CE3 /* marriage.jpg in Resources */,
 				183A587E2002544800F47E0B /* bg.png in Resources */,
 				183A586A2001EE0E00F47E0B /* user.png in Resources */,
 				183A5874200229D700F47E0B /* search.png in Resources */,
+				D196DB4C202B7AA900B11CE3 /* hardwareciramic.jpg in Resources */,
 				183A58692001EE0E00F47E0B /* Uncheck.png in Resources */,
 				189F4DB720014E3A00B5EE45 /* pizza.jpg in Resources */,
 				189F4D9720014E3A00B5EE45 /* agents.jpg in Resources */,
@@ -603,15 +673,19 @@
 				183A58662001EE0E00F47E0B /* check.png in Resources */,
 				189F4D9F20014E3A00B5EE45 /* constraction.jpg in Resources */,
 				18C5254A000002CF0088F19F /* LaunchScreen.storyboard in Resources */,
+				D196DB50202B7AA900B11CE3 /* minibazar.jpg in Resources */,
 				189F4DA420014E3A00B5EE45 /* financial.jpg in Resources */,
 				189F4D6E2001462200B5EE45 /* speoffer.png in Resources */,
+				D196DB4A202B7AA800B11CE3 /* furniture.jpg in Resources */,
 				189F4DA620014E3A00B5EE45 /* giftcosmatics.jpg in Resources */,
+				D196DB4B202B7AA800B11CE3 /* gymyoga.jpg in Resources */,
 				189F4DB820014E3A00B5EE45 /* shoes.jpg in Resources */,
 				189F4DAC20014E3A00B5EE45 /* industrial.jpg in Resources */,
 				189F4DA920014E3A00B5EE45 /* homeapplince.jpg in Resources */,
 				1899BD2F1FFEC3670051E139 /* img3.jpg in Resources */,
 				1899BD2D1FFEC3670051E139 /* img1.png in Resources */,
 				189F4DB020014E3A00B5EE45 /* medical.jpg in Resources */,
+				D196DB4D202B7AA900B11CE3 /* jewelry.jpg in Resources */,
 				189F4DA220014E3A00B5EE45 /* emergency.jpg in Resources */,
 				189F4DA720014E3A00B5EE45 /* gymyoga.png in Resources */,
 				188CC75020053C01000B9C17 /* map.png in Resources */,
@@ -634,6 +708,8 @@
 				189F4DA020014E3A00B5EE45 /* designandprint.jpg in Resources */,
 				189F4DB920014E3A00B5EE45 /* specialoffers1.jpg in Resources */,
 				189F4DB220014E3A00B5EE45 /* mobile.jpg in Resources */,
+				D196DB48202B7AA800B11CE3 /* cityGif.gif in Resources */,
+				D196DB51202B7AA900B11CE3 /* parlour.jpg in Resources */,
 				189F4D9E20014E3A00B5EE45 /* computer.jpg in Resources */,
 				1899BD2E1FFEC3670051E139 /* img2.JPG in Resources */,
 				189F4DAA20014E3A00B5EE45 /* homeservices.jpg in Resources */,
@@ -643,6 +719,7 @@
 				189F4DBC20014E3A00B5EE45 /* travels.jpg in Resources */,
 				189F4D9920014E3A00B5EE45 /* automobiles.jpg in Resources */,
 				189F4DB120014E3A00B5EE45 /* minibazar.png in Resources */,
+				D196DB47202B7AA800B11CE3 /* bgImg.png in Resources */,
 				188CC75220053C01000B9C17 /* phone.png in Resources */,
 				189F4DAE20014E3A00B5EE45 /* jobs.jpg in Resources */,
 				189F4DAF20014E3A00B5EE45 /* marriage.png in Resources */,
@@ -673,6 +750,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		28E8B7DFB4C4750A3FCFC141 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PageBasedDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		835700EC3B74BA5499D755E5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PageBasedDemo/Pods-PageBasedDemo-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PageBasedDemo/Pods-PageBasedDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E13D23499CCBE6439EAF3B9D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PageBasedDemo/Pods-PageBasedDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PageBasedDemo/Pods-PageBasedDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		18C52534000002CF0088F19F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -696,6 +832,7 @@
 				188CC76220054D3E000B9C17 /* CAPSPageMenu+UIScrollViewDelegate.swift in Sources */,
 				1899BD3A1FFEC3670051E139 /* SlideViewCollectionReusableView.swift in Sources */,
 				188CC75620054699000B9C17 /* StoreDetailViewController.swift in Sources */,
+				D196DB55202B89A000B11CE3 /* InfoViewController.swift in Sources */,
 				1899BD311FFEC3670051E139 /* FullScreenSlideshowViewController.swift in Sources */,
 				D1B39CBB20278CD3006C7540 /* ProductListViewController.swift in Sources */,
 				18C52542000002CF0088F19F /* ModelController.swift in Sources */,
@@ -705,6 +842,7 @@
 				189F4DC4200161B500B5EE45 /* textField.swift in Sources */,
 				1899BD341FFEC3670051E139 /* InputSource.swift in Sources */,
 				D18AE6FD202A28F400DF5246 /* BookOrderViewController.swift in Sources */,
+				D196DB53202B83DE00B11CE3 /* MapViewController.swift in Sources */,
 				1899BD391FFEC3670051E139 /* MainViewController.swift in Sources */,
 				1899BD321FFEC3670051E139 /* ImageSlideshow.swift in Sources */,
 				18959F502003FFA700D86ADF /* StoreListViewController.swift in Sources */,
@@ -863,6 +1001,7 @@
 		};
 		18C52565000002CF0088F19F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F03021872E3829B87AFD7164 /* Pods-PageBasedDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VNX47CC292;
@@ -876,6 +1015,7 @@
 		};
 		18C52566000002CF0088F19F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9C7F17EE3AA26E87B2401C9 /* Pods-PageBasedDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = VNX47CC292;

@@ -43,12 +43,31 @@ class StoreDetailViewController: UIViewController {
         
         var viewController : [UIViewController] = []
         let arrTitle = ["Videos","Images","Friend","Web"]
-        for i in 0...3
+        for i in 0...4
         {
+            if i == 0{
                 let storeCntrl  = self.storyboard?.instantiateViewController(withIdentifier: "VideoListViewController") as! VideoListViewController
-                 storeCntrl.title = arrTitle[i]
-            
+                storeCntrl.title = arrTitle[i]
+                
                 viewController.append(storeCntrl)
+            }else if i == 1{
+                
+            }else if i == 2{
+                let mapCntrl  = self.storyboard?.instantiateViewController(withIdentifier: "InfoViewController") as! InfoViewController
+                mapCntrl.title = arrTitle[i]
+                viewController.append(mapCntrl)
+                
+            }else if i == 3{
+                let mapCntrl  = self.storyboard?.instantiateViewController(withIdentifier: "MapViewController") as! MapViewController
+                mapCntrl.title = arrTitle[i]
+                mapCntrl.flgHideNavigation = true
+                viewController.append(mapCntrl)
+            }else{
+                let mapCntrl  = self.storyboard?.instantiateViewController(withIdentifier: "InfoViewController") as! InfoViewController
+                mapCntrl.title = arrTitle[i]
+                viewController.append(mapCntrl)
+            }
+            
             
         }
         

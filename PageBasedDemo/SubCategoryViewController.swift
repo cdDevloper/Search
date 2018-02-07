@@ -100,7 +100,7 @@ extension SubCategoryViewController:UITableViewDelegate,UITableViewDataSource{
         }
         
         // try out other sources such as `afNetworkingSource`, `alamofireSource` or `sdWebImageSource` or `kingfisherSource`
-        
+    
         let recognizer = UITapGestureRecognizer(target: self, action: #selector(self.didTap))
         cell.imgSlideView.addGestureRecognizer(recognizer)
         return cell
