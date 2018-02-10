@@ -64,7 +64,7 @@ class StoreDetailViewController: UIViewController {
                 viewController.append(mapCntrl)
             }else{
                 let mapCntrl  = self.storyboard?.instantiateViewController(withIdentifier: "InfoViewController") as! InfoViewController
-                mapCntrl.title = arrTitle[i]
+                //mapCntrl.title = arrTitle[i]
                 viewController.append(mapCntrl)
             }
             

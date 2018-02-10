@@ -33,6 +33,15 @@ class RegisterViewController: UIViewController {
         btnCity.layer.borderWidth = 1
         btnCity.layer.borderColor = UIColor.white.cgColor
         
+        
+        let imageData = try? Data(contentsOf: Bundle.main.url(forResource: "citygif", withExtension: "gif")!)
+        let advTimeGif = UIImage.gifImageWithData(imageData!)
+        imgGif.image = advTimeGif
+        
+        
+        //let cityGif = UIImage.gifImageWithName("")
+         //imgGif = UIImageView(image: cityGif)
+        
     }
 
     override func viewWillAppear(_ animated: Bool) {

@@ -87,7 +87,6 @@
 		189F4DB620014E3A00B5EE45 /* petanimals.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 189F4D8F20014E3A00B5EE45 /* petanimals.jpg */; };
 		189F4DB720014E3A00B5EE45 /* pizza.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 189F4D9020014E3A00B5EE45 /* pizza.jpg */; };
 		189F4DB820014E3A00B5EE45 /* shoes.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 189F4D9120014E3A00B5EE45 /* shoes.jpg */; };
-		189F4DB920014E3A00B5EE45 /* specialoffers1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 189F4D9220014E3A00B5EE45 /* specialoffers1.jpg */; };
 		189F4DBA20014E3A00B5EE45 /* sweetmart.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 189F4D9320014E3A00B5EE45 /* sweetmart.jpg */; };
 		189F4DBB20014E3A00B5EE45 /* transport.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 189F4D9420014E3A00B5EE45 /* transport.jpg */; };
 		189F4DBC20014E3A00B5EE45 /* travels.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 189F4D9520014E3A00B5EE45 /* travels.jpg */; };
@@ -109,7 +108,6 @@
 		D15664CF20271312003545D9 /* ChangeCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15664CE20271312003545D9 /* ChangeCityViewController.swift */; };
 		D18AE6FD202A28F400DF5246 /* BookOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18AE6FC202A28F400DF5246 /* BookOrderViewController.swift */; };
 		D196DB47202B7AA800B11CE3 /* bgImg.png in Resources */ = {isa = PBXBuildFile; fileRef = D196DB3C202B7AA800B11CE3 /* bgImg.png */; };
-		D196DB48202B7AA800B11CE3 /* cityGif.gif in Resources */ = {isa = PBXBuildFile; fileRef = D196DB3D202B7AA800B11CE3 /* cityGif.gif */; };
 		D196DB49202B7AA800B11CE3 /* firstscreen.png in Resources */ = {isa = PBXBuildFile; fileRef = D196DB3E202B7AA800B11CE3 /* firstscreen.png */; };
 		D196DB4A202B7AA800B11CE3 /* furniture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D196DB3F202B7AA800B11CE3 /* furniture.jpg */; };
 		D196DB4B202B7AA800B11CE3 /* gymyoga.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D196DB40202B7AA800B11CE3 /* gymyoga.jpg */; };
@@ -123,6 +121,13 @@
 		D196DB55202B89A000B11CE3 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D196DB54202B89A000B11CE3 /* InfoViewController.swift */; };
 		D1B39CBB20278CD3006C7540 /* ProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B39CBA20278CD3006C7540 /* ProductListViewController.swift */; };
 		D1B39CBD2027941F006C7540 /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B39CBC2027941F006C7540 /* ProductDetailViewController.swift */; };
+		D1FF91DB202F1C6D00EC447E /* specialoffers.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D1FF91DA202F1C6D00EC447E /* specialoffers.jpg */; };
+		D1FF91DF202F292B00EC447E /* call.png in Resources */ = {isa = PBXBuildFile; fileRef = D1FF91DC202F292B00EC447E /* call.png */; };
+		D1FF91E0202F292B00EC447E /* drowerback.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D1FF91DD202F292B00EC447E /* drowerback.jpg */; };
+		D1FF91E1202F292B00EC447E /* moreinfo.png in Resources */ = {isa = PBXBuildFile; fileRef = D1FF91DE202F292B00EC447E /* moreinfo.png */; };
+		D1FF91E4202F482E00EC447E /* iOSDevCenters+GIF.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FF91E3202F482D00EC447E /* iOSDevCenters+GIF.swift */; };
+		D1FF91E6202F4A4E00EC447E /* dot.png in Resources */ = {isa = PBXBuildFile; fileRef = D1FF91E5202F4A4E00EC447E /* dot.png */; };
+		D1FF91E8202F4C0000EC447E /* citygif.gif in Resources */ = {isa = PBXBuildFile; fileRef = D1FF91E7202F4C0000EC447E /* citygif.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -223,7 +228,6 @@
 		189F4D8F20014E3A00B5EE45 /* petanimals.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = petanimals.jpg; sourceTree = "<group>"; };
 		189F4D9020014E3A00B5EE45 /* pizza.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pizza.jpg; sourceTree = "<group>"; };
 		189F4D9120014E3A00B5EE45 /* shoes.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = shoes.jpg; sourceTree = "<group>"; };
-		189F4D9220014E3A00B5EE45 /* specialoffers1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = specialoffers1.jpg; sourceTree = "<group>"; };
 		189F4D9320014E3A00B5EE45 /* sweetmart.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sweetmart.jpg; sourceTree = "<group>"; };
 		189F4D9420014E3A00B5EE45 /* transport.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = transport.jpg; sourceTree = "<group>"; };
 		189F4D9520014E3A00B5EE45 /* travels.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = travels.jpg; sourceTree = "<group>"; };
@@ -252,7 +256,6 @@
 		D15664CE20271312003545D9 /* ChangeCityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangeCityViewController.swift; sourceTree = "<group>"; };
 		D18AE6FC202A28F400DF5246 /* BookOrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookOrderViewController.swift; sourceTree = "<group>"; };
 		D196DB3C202B7AA800B11CE3 /* bgImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bgImg.png; sourceTree = "<group>"; };
-		D196DB3D202B7AA800B11CE3 /* cityGif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = cityGif.gif; sourceTree = "<group>"; };
 		D196DB3E202B7AA800B11CE3 /* firstscreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = firstscreen.png; sourceTree = "<group>"; };
 		D196DB3F202B7AA800B11CE3 /* furniture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = furniture.jpg; sourceTree = "<group>"; };
 		D196DB40202B7AA800B11CE3 /* gymyoga.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gymyoga.jpg; sourceTree = "<group>"; };
@@ -266,6 +269,13 @@
 		D196DB54202B89A000B11CE3 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		D1B39CBA20278CD3006C7540 /* ProductListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductListViewController.swift; sourceTree = "<group>"; };
 		D1B39CBC2027941F006C7540 /* ProductDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
+		D1FF91DA202F1C6D00EC447E /* specialoffers.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = specialoffers.jpg; sourceTree = "<group>"; };
+		D1FF91DC202F292B00EC447E /* call.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = call.png; sourceTree = "<group>"; };
+		D1FF91DD202F292B00EC447E /* drowerback.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = drowerback.jpg; sourceTree = "<group>"; };
+		D1FF91DE202F292B00EC447E /* moreinfo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = moreinfo.png; sourceTree = "<group>"; };
+		D1FF91E3202F482D00EC447E /* iOSDevCenters+GIF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "iOSDevCenters+GIF.swift"; sourceTree = "<group>"; };
+		D1FF91E5202F4A4E00EC447E /* dot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dot.png; sourceTree = "<group>"; };
+		D1FF91E7202F4C0000EC447E /* citygif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = citygif.gif; sourceTree = "<group>"; };
 		F03021872E3829B87AFD7164 /* Pods-PageBasedDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PageBasedDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PageBasedDemo/Pods-PageBasedDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -354,8 +364,13 @@
 		1899BD1D1FFEC3670051E139 /* DummyImages */ = {
 			isa = PBXGroup;
 			children = (
+				D1FF91E7202F4C0000EC447E /* citygif.gif */,
+				D1FF91E5202F4A4E00EC447E /* dot.png */,
+				D1FF91DC202F292B00EC447E /* call.png */,
+				D1FF91DD202F292B00EC447E /* drowerback.jpg */,
+				D1FF91DE202F292B00EC447E /* moreinfo.png */,
+				D1FF91DA202F1C6D00EC447E /* specialoffers.jpg */,
 				D196DB3C202B7AA800B11CE3 /* bgImg.png */,
-				D196DB3D202B7AA800B11CE3 /* cityGif.gif */,
 				D196DB3E202B7AA800B11CE3 /* firstscreen.png */,
 				D196DB3F202B7AA800B11CE3 /* furniture.jpg */,
 				D196DB40202B7AA800B11CE3 /* gymyoga.jpg */,
@@ -401,7 +416,6 @@
 				189F4D8F20014E3A00B5EE45 /* petanimals.jpg */,
 				189F4D9020014E3A00B5EE45 /* pizza.jpg */,
 				189F4D9120014E3A00B5EE45 /* shoes.jpg */,
-				189F4D9220014E3A00B5EE45 /* specialoffers1.jpg */,
 				189F4D9320014E3A00B5EE45 /* sweetmart.jpg */,
 				189F4D9420014E3A00B5EE45 /* transport.jpg */,
 				189F4D9520014E3A00B5EE45 /* travels.jpg */,
@@ -432,6 +446,7 @@
 		1899BD3B1FFEC37B0051E139 /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
+				D1FF91E2202F47CB00EC447E /* GifLoader */,
 				188CC75720054D3E000B9C17 /* CAPageMenu */,
 				1899BD211FFEC3670051E139 /* ImageSlideView */,
 			);
@@ -534,6 +549,14 @@
 				C8F5F14440803571D4B43C4B /* Pods_PageBasedDemo.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D1FF91E2202F47CB00EC447E /* GifLoader */ = {
+			isa = PBXGroup;
+			children = (
+				D1FF91E3202F482D00EC447E /* iOSDevCenters+GIF.swift */,
+			);
+			name = GifLoader;
 			sourceTree = "<group>";
 		};
 		FA8BF7D5A316C019CB66F697 /* Pods */ = {
@@ -656,6 +679,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1FF91E1202F292B00EC447E /* moreinfo.png in Resources */,
 				D196DB4E202B7AA900B11CE3 /* map.png in Resources */,
 				189F4DAD20014E3A00B5EE45 /* jewelry.png in Resources */,
 				189F4D9620014E3A00B5EE45 /* advocate.jpg in Resources */,
@@ -687,6 +711,7 @@
 				189F4DB020014E3A00B5EE45 /* medical.jpg in Resources */,
 				D196DB4D202B7AA900B11CE3 /* jewelry.jpg in Resources */,
 				189F4DA220014E3A00B5EE45 /* emergency.jpg in Resources */,
+				D1FF91DF202F292B00EC447E /* call.png in Resources */,
 				189F4DA720014E3A00B5EE45 /* gymyoga.png in Resources */,
 				188CC75020053C01000B9C17 /* map.png in Resources */,
 				189F4DB320014E3A00B5EE45 /* mycity.png in Resources */,
@@ -706,10 +731,9 @@
 				189F4DA820014E3A00B5EE45 /* hardwareciramic.png in Resources */,
 				189F4D9D20014E3A00B5EE45 /* colddrinks.jpg in Resources */,
 				189F4DA020014E3A00B5EE45 /* designandprint.jpg in Resources */,
-				189F4DB920014E3A00B5EE45 /* specialoffers1.jpg in Resources */,
 				189F4DB220014E3A00B5EE45 /* mobile.jpg in Resources */,
-				D196DB48202B7AA800B11CE3 /* cityGif.gif in Resources */,
 				D196DB51202B7AA900B11CE3 /* parlour.jpg in Resources */,
+				D1FF91E8202F4C0000EC447E /* citygif.gif in Resources */,
 				189F4D9E20014E3A00B5EE45 /* computer.jpg in Resources */,
 				1899BD2E1FFEC3670051E139 /* img2.JPG in Resources */,
 				189F4DAA20014E3A00B5EE45 /* homeservices.jpg in Resources */,
@@ -721,12 +745,15 @@
 				189F4DB120014E3A00B5EE45 /* minibazar.png in Resources */,
 				D196DB47202B7AA800B11CE3 /* bgImg.png in Resources */,
 				188CC75220053C01000B9C17 /* phone.png in Resources */,
+				D1FF91DB202F1C6D00EC447E /* specialoffers.jpg in Resources */,
 				189F4DAE20014E3A00B5EE45 /* jobs.jpg in Resources */,
 				189F4DAF20014E3A00B5EE45 /* marriage.png in Resources */,
 				189F4DB620014E3A00B5EE45 /* petanimals.jpg in Resources */,
+				D1FF91E6202F4A4E00EC447E /* dot.png in Resources */,
 				189F4DB420014E3A00B5EE45 /* opticals.jpg in Resources */,
 				189F4D9C20014E3A00B5EE45 /* cloths.jpg in Resources */,
 				18C52545000002CF0088F19F /* Main.storyboard in Resources */,
+				D1FF91E0202F292B00EC447E /* drowerback.jpg in Resources */,
 				189F4DAB20014E3A00B5EE45 /* hotel.jpg in Resources */,
 				D15664CD20270CBE003545D9 /* home123.png in Resources */,
 				189F4DA120014E3A00B5EE45 /* educational.jpg in Resources */,
@@ -845,6 +872,7 @@
 				D196DB53202B83DE00B11CE3 /* MapViewController.swift in Sources */,
 				1899BD391FFEC3670051E139 /* MainViewController.swift in Sources */,
 				1899BD321FFEC3670051E139 /* ImageSlideshow.swift in Sources */,
+				D1FF91E4202F482E00EC447E /* iOSDevCenters+GIF.swift in Sources */,
 				18959F502003FFA700D86ADF /* StoreListViewController.swift in Sources */,
 				18C52540000002CF0088F19F /* DataViewController.swift in Sources */,
 				183A5870200224BB00F47E0B /* TermCondViewController.swift in Sources */,

@@ -1,0 +1,6 @@
+framework module Pods_PageBasedDemo {
+  umbrella header "Pods-PageBasedDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

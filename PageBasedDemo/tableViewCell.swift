@@ -35,6 +35,11 @@ class tableViewCell: UITableViewCell {
     @IBOutlet weak var lblActualRate: UILabel!
     @IBOutlet weak var lblDiscountRate: UILabel!
     
+    //menuCell
+    @IBOutlet weak var imgMenuCell: UIImageView!
+    
+    @IBOutlet weak var lblMenuName: UILabel!
+    
     //@IBOutlet weak var imgStore: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()

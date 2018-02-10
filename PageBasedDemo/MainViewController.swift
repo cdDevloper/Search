@@ -12,17 +12,39 @@ class MainViewController: UIViewController {
 
     var currentPage:Int = 0
     
-    var arrImg:[String] = ["mycity.png","specialoffers1.jpg","emergency.jpg","events.jpg","hospital.jpg","medical.jpg","mobile.jpg","computer.jpg","cloths.jpg","shoes.jpg","hotel.jpg","pizza.jpg","travels.jpg","giftcosmatics.jpg","minibazar.jpg","busines.png","buildersanddevelopers.jpg","constraction.jpg","advocate.jpg","financial.jpg","jewelry.png","designandprint.jpg","homeapplince.jpg","homeservices.jpg","educational.jpg","agents.jpg","sweetmart.jpg","colddrinks.jpg","hardwareciramic.jpg","furniture.jpg","marriage.jpg","transport.jpg","gymyoga.jpg","parlour.jpg","automobiles.jpg","industrial.jpg","opticals.jpg","bags.jpg","aggriculture.JPG","petanimals.jpg"]
+     var arrMenuImg:[String] = ["mycity.png","mycity.png","mycity.png","mycity.png","mycity.png"]
+     var arrMenuStr:[String] = ["Share","Employee Login","About Us!","For User Info.","App Guide Video"]
+    
+    
+    var arrImg:[String] = ["mycity.png","specialoffers.jpg","emergency.jpg","events.jpg","hospital.jpg","medical.jpg","mobile.jpg","computer.jpg","cloths.jpg","shoes.jpg","hotel.jpg","pizza.jpg","travels.jpg","giftcosmatics.jpg","minibazar.jpg","jobs.jpg","buildersanddevelopers.jpg","constraction.jpg","advocate.jpg","financial.jpg","jewelry.png","designandprint.jpg","homeapplince.jpg","homeservices.jpg","educational.jpg","agents.jpg","sweetmart.jpg","colddrinks.jpg","hardwareciramic.jpg","furniture.jpg","marriage.jpg","transport.jpg","gymyoga.jpg","parlour.jpg","automobiles.jpg","industrial.jpg","opticals.jpg","bags.jpg","aggriculture.JPG","petanimals.jpg"]
     
     var arrCat:[String] = ["MyCity","Special Offers","Emergency","Movies & Events","Hospital","Medical","Mobile Shop","Computers","Cloth Shop","Shoes","Hotel","Pizza","Tours & Travels","Gift & Cosmetics","Bazaar & Grocery","Business & Jobs","B & D","Construction","Advocate","Financial","Jewellery Shop","Design & Print","Home Products","Home Service","Educational","All Agents","Sweet Mart","Coldrinks","Hardware & Ceramics", "Home Decor & Furniture","Marriage & Events","Transport & Courier","Gym & Yoga","Parlours","Automobiles","Industrial","Opticals","Bags","Agriculture","Pet Animals"]
     
     
      @IBOutlet weak var lblCity: UILabel!
     
+    //SlideView
+    @IBOutlet var tblView: UITableView!
+    @IBOutlet var slideView: UIView!
+    @IBOutlet var lblName: UILabel!
+    @IBOutlet var lblMenuCity: UILabel!
+    @IBOutlet var lblOfflineService: UILabel!
+    @IBOutlet var lblProfile: UILabel!
+    @IBOutlet var imgOfflineSer: UIImageView!
+    @IBOutlet var imgProfile: UIImageView!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        // Hide SlideMenu
+         menuHide()
+        
+        //Table View Setting
+        
+        tblView.estimatedRowHeight = 45.0
+        tblView.separatorStyle = .none
+        
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -37,18 +59,54 @@ class MainViewController: UIViewController {
        print(currentPage)
     }
     
+    func menuOpen()
+    {
+        
+        self.slideView.isHidden = false
+        self.view.endEditing(true)
+        self.view.bringSubview(toFront: slideView)
+        let transition: CATransition = CATransition()
+        let timeFunc : CAMediaTimingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+        transition.duration = 0.25
+        transition.timingFunction = timeFunc
+        transition.type = kCATransitionPush
+        transition.subtype = kCATransitionFromLeft
+        self.slideView.layer.add(transition, forKey: kCATransition)
+       
+      
+    }
+    
+    func menuHide()
+    {
+        self.slideView.isHidden = true
+    }
+
+    
+    
+    
     //MARK: IBAction Methods
     @IBAction func btnChangeCityPress(_ sender: Any) {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "ChangeCityViewController") as! ChangeCityViewController
         vc.delegate = self
         self.navigationController?.pushViewController(vc, animated: true)
     }
+    @IBAction func btnMenuPress(_ sender: Any) {
+        self.menuOpen()
+    }
+    
+    @IBAction func btnbHideMenu(_ sender: Any)
+    {
+        self.menuHide()
+        
+    }
+    
 }
 
 
 
 // Mark: UICollectionView Delegat and Datasource Methods
 extension MainViewController:UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
+    
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
@@ -57,8 +115,7 @@ extension MainViewController:UICollectionViewDelegate,UICollectionViewDataSource
         return arrCat.count
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize
-    {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize{
         let width = (UIScreen.main.bounds.size.width/2)-15
         return CGSize(width: width, height:179)
         
@@ -66,12 +123,11 @@ extension MainViewController:UICollectionViewDelegate,UICollectionViewDataSource
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "mainTypeCell", for: indexPath) as! MainTypeCollectionViewCell
-         cell.cardView()
+        // cell.cardView()
         cell.imgViewMainType.image = UIImage(named:arrImg[indexPath.row])
         cell.lblMainType.text      = arrCat[indexPath.row]
-    
-        return cell
         
+        return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
@@ -114,6 +170,8 @@ extension MainViewController:UICollectionViewDelegate,UICollectionViewDataSource
                 assert(false, "Unexpected element kind")
             }
         }
+    
+    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         if indexPath.row > 1{
@@ -129,6 +187,33 @@ extension MainViewController:UICollectionViewDelegate,UICollectionViewDataSource
         }
     }
 }
+
+
+// MARK: - TableView Delegate and DataSource
+extension MainViewController : UITableViewDelegate,UITableViewDataSource
+{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
+      return 5
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "menuCell") as! tableViewCell
+        cell.selectionStyle = .none
+        cell.lblMenuName.text = arrMenuStr[indexPath.row]
+        cell.imgMenuCell.image = UIImage(named: arrMenuImg[indexPath.row])
+        return cell
+        
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+    {
+        menuHide()
+    }
+
+}
+
 
 //Mark: Custum Methods
 extension MainViewController : ChangeCityDelegate{
