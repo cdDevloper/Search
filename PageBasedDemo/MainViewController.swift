@@ -12,7 +12,7 @@ class MainViewController: UIViewController {
 
     var currentPage:Int = 0
     
-     var arrMenuImg:[String] = ["mycity.png","mycity.png","mycity.png","mycity.png","mycity.png"]
+     //var arrMenuImg:[String] = ["mycity.png","mycity.png","mycity.png","mycity.png","mycity.png"]
      var arrMenuStr:[String] = ["Share","Employee Login","About Us!","For User Info.","App Guide Video"]
     
     
@@ -33,6 +33,10 @@ class MainViewController: UIViewController {
     @IBOutlet var imgOfflineSer: UIImageView!
     @IBOutlet var imgProfile: UIImageView!
 
+     @IBOutlet var collView: UICollectionView!
+    var flgAnimatedLbl = true
+
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,9 +45,11 @@ class MainViewController: UIViewController {
          menuHide()
         
         //Table View Setting
-        
         tblView.estimatedRowHeight = 45.0
         tblView.separatorStyle = .none
+        
+        let nibName = UINib(nibName: "AnimatedLabelCollectionReusableView", bundle:nil)
+        collView.register(nibName, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "animatedLabel")
         
     }
 
@@ -54,6 +60,11 @@ class MainViewController: UIViewController {
     
     //Mark: Custum Methods
     
+    // function which is triggered when handleTap is called
+    func handleTap(_ sender: UITapGestureRecognizer) {
+        print("Hello World")
+    }
+    
     func didTap()
     {
        print(currentPage)
@@ -61,7 +72,6 @@ class MainViewController: UIViewController {
     
     func menuOpen()
     {
-        
         self.slideView.isHidden = false
         self.view.endEditing(true)
         self.view.bringSubview(toFront: slideView)
@@ -72,8 +82,6 @@ class MainViewController: UIViewController {
         transition.type = kCATransitionPush
         transition.subtype = kCATransitionFromLeft
         self.slideView.layer.add(transition, forKey: kCATransition)
-       
-      
     }
     
     func menuHide()
@@ -81,8 +89,9 @@ class MainViewController: UIViewController {
         self.slideView.isHidden = true
     }
 
-    
-    
+    func rgisterButton(_ sender: UIButton) {
+       print("Press")
+    }
     
     //MARK: IBAction Methods
     @IBAction func btnChangeCityPress(_ sender: Any) {
@@ -90,12 +99,18 @@ class MainViewController: UIViewController {
         vc.delegate = self
         self.navigationController?.pushViewController(vc, animated: true)
     }
+    
+    @IBAction func btnSearchPress(_ sender: Any) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "SearchViewController") as! SearchViewController
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+    }
+
     @IBAction func btnMenuPress(_ sender: Any) {
         self.menuOpen()
     }
     
-    @IBAction func btnbHideMenu(_ sender: Any)
-    {
+    @IBAction func btnbHideMenu(_ sender: Any){
         self.menuHide()
         
     }
@@ -108,11 +123,15 @@ class MainViewController: UIViewController {
 extension MainViewController:UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 1
+        return 2
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return arrCat.count
+       if section == 0{
+            return 0
+        }else{
+            return arrCat.count
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize{
@@ -136,35 +155,54 @@ extension MainViewController:UICollectionViewDelegate,UICollectionViewDataSource
                 
             case UICollectionElementKindSectionHeader:
                 
-                let cell = collectionView.dequeueReusableSupplementaryView(ofKind: kind,
-                                                                           withReuseIdentifier: "imgSlideViewCell",
-                                                                           for: indexPath) as! SlideViewCollectionReusableView
-                
-                // cell.imgSlideView.layer.borderColor = color.ImgborderCoor.cgColor
-                cell.imgSlideView.layer.borderWidth = 1
-                cell.imgSlideView.setImageInputs([ImageSource(image: UIImage(named: "img1.png")!),
-                                                  ImageSource(image: UIImage(named: "img2.JPG")!),ImageSource(image: UIImage(named: "img3.jpg")!)])
-                cell.imgSlideView.backgroundColor = UIColor.white
-                cell.imgSlideView.slideshowInterval = 5.0
-                cell.imgSlideView.pageControlPosition = PageControlPosition.insideScrollView
-                cell.imgSlideView.pageControl.currentPageIndicatorTintColor = UIColor.blue
-                cell.imgSlideView.pageControl.pageIndicatorTintColor = UIColor.white
-                cell.imgSlideView.contentScaleMode = UIViewContentMode.scaleAspectFill
-                // optional way to show activity indicator during image load (skipping the line will show no activity indicator)
-                
-                
-                cell.imgSlideView.activityIndicator = DefaultActivityIndicator()
-                
-                cell.imgSlideView.currentPageChanged = { page in
-                    self.currentPage = page
-                    print("current page:", page)
+                if indexPath.section == 0{
+                    let cell = collectionView.dequeueReusableSupplementaryView(ofKind: kind,
+                                                                               withReuseIdentifier: "imgSlideViewCell",
+                                                                               for: indexPath) as! SlideViewCollectionReusableView
+                    
+                    // cell.imgSlideView.layer.borderColor = color.ImgborderCoor.cgColor
+                    cell.imgSlideView.layer.borderWidth = 1
+                    cell.imgSlideView.setImageInputs([ImageSource(image: UIImage(named: "img1.png")!),
+                                                      ImageSource(image: UIImage(named: "img2.JPG")!),ImageSource(image: UIImage(named: "img3.jpg")!)])
+                    cell.imgSlideView.backgroundColor = UIColor.white
+                    cell.imgSlideView.slideshowInterval = 5.0
+                    cell.imgSlideView.pageControlPosition = PageControlPosition.insideScrollView
+                    cell.imgSlideView.pageControl.currentPageIndicatorTintColor = UIColor.blue
+                    cell.imgSlideView.pageControl.pageIndicatorTintColor = UIColor.white
+                    cell.imgSlideView.contentScaleMode = UIViewContentMode.scaleAspectFill
+                    // optional way to show activity indicator during image load (skipping the line will show no activity indicator)
+                    
+                    
+                    cell.imgSlideView.activityIndicator = DefaultActivityIndicator()
+                    
+                    cell.imgSlideView.currentPageChanged = { page in
+                        self.currentPage = page
+                        print("current page:", page)
+                    }
+                    
+                    // try out other sources such as `afNetworkingSource`, `alamofireSource` or `sdWebImageSource` or `kingfisherSource`
+                    
+                    let recognizer = UITapGestureRecognizer(target: self, action: #selector(self.didTap))
+                    cell.imgSlideView.addGestureRecognizer(recognizer)
+                    return cell
+                }else{
+                    
+                    let animatedView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "animatedLabel", for: indexPath) as! AnimatedLabelCollectionReusableView
+                    
+                    if flgAnimatedLbl{
+                        flgAnimatedLbl = false
+                        let lblAnimated = LoopLabelView(frame: CGRect(x: 0, y: 0, width: self.collView.frame.size.width, height: 20))
+                        lblAnimated.text = "Click here for your Advertise Now...! For More Info - 933 933 4444        "
+                        animatedView.addSubview(lblAnimated)
+                    }
+                    
+                    let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:)))
+                    tap.numberOfTapsRequired = 1
+                    animatedView.isUserInteractionEnabled = true
+                    animatedView.addGestureRecognizer(tap)
+                    return animatedView
                 }
                 
-                // try out other sources such as `afNetworkingSource`, `alamofireSource` or `sdWebImageSource` or `kingfisherSource`
-                
-                let recognizer = UITapGestureRecognizer(target: self, action: #selector(self.didTap))
-                cell.imgSlideView.addGestureRecognizer(recognizer)
-                return cell
             default:
                 
                 assert(false, "Unexpected element kind")
@@ -184,8 +222,21 @@ extension MainViewController:UICollectionViewDelegate,UICollectionViewDataSource
             vc.strTitle = arrCat[indexPath.row]
             vc.flgViewController = "offer"
             self.navigationController?.pushViewController(vc, animated: true)
+        }else{
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "MyCityDetailViewController") as! MyCityDetailViewController
+            self.navigationController?.pushViewController(vc, animated: true)
         }
     }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize{
+        if section == 0{
+            return CGSize(width: self.collView.bounds.width, height:174.0)
+        }else{
+            return CGSize(width: self.collView.bounds.width, height:30.0)
+        }
+    }
+    
+    
 }
 
 
@@ -202,9 +253,8 @@ extension MainViewController : UITableViewDelegate,UITableViewDataSource
         let cell = tableView.dequeueReusableCell(withIdentifier: "menuCell") as! tableViewCell
         cell.selectionStyle = .none
         cell.lblMenuName.text = arrMenuStr[indexPath.row]
-        cell.imgMenuCell.image = UIImage(named: arrMenuImg[indexPath.row])
+        cell.imgMenuCell.image = UIImage(named:"dot.png")// arrMenuImg[indexPath.row]
         return cell
-        
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
@@ -214,11 +264,88 @@ extension MainViewController : UITableViewDelegate,UITableViewDataSource
 
 }
 
-
 //Mark: Custum Methods
 extension MainViewController : ChangeCityDelegate{
     func changeCity(cityName: String) {
         lblCity.text = cityName
     }
 
+}
+
+
+class LoopLabelView: UIView {
+    
+    private var labelText : String?
+    private var rect0: CGRect!
+    private var rect1: CGRect!
+    private var labelArray = [UILabel]()
+    private var isStop = false
+    private var timeInterval: TimeInterval!
+    private let leadingBuffer = CGFloat(25.0)
+    private let loopStartDelay = 2.0
+    
+//    required public init?(coder aDecoder: NSCoder) {
+//        super.init(coder: aDecoder)
+//    }
+    
+    var text: String? {
+        didSet {
+            labelText = text
+            setup()
+        }
+    }
+    
+    func setup() {
+        self.backgroundColor = UIColor.clear
+        let label = UILabel()
+        label.text = labelText
+        label.frame = CGRect.zero
+        label.textColor = Color.bussBgColor
+        
+        timeInterval = TimeInterval((labelText?.characters.count)! / 5)
+        let sizeOfText = label.sizeThatFits(CGSize.zero)
+        let textIsTooLong = true//sizeOfText.width > frame.size.width ? true : false
+        
+        rect0 = CGRect(x: leadingBuffer, y: 0, width: sizeOfText.width, height: self.bounds.size.height)
+        rect1 = CGRect(x: rect0.origin.x + rect0.size.width, y: 0, width: sizeOfText.width, height: self.bounds.size.height)
+        label.frame = rect0
+        
+        super.clipsToBounds = true
+        labelArray.append(label)
+        self.addSubview(label)
+        
+        //self.frame = CGRect(origin: self.frame.origin, size: CGSize(width: 0, height: 0))
+        
+        if textIsTooLong {
+            let additionalLabel = UILabel(frame: rect1)
+            additionalLabel.text = labelText
+            additionalLabel.textColor = Color.bussBgColor
+            self.addSubview(additionalLabel)
+            
+            labelArray.append(additionalLabel)
+            
+            animateLabelText()
+        }
+    }
+    
+    func animateLabelText() {
+        if(!isStop) {
+            let labelAtIndex0 = labelArray[0]
+            let labelAtIndex1 = labelArray[1]
+            
+            UIView.animate(withDuration: timeInterval, delay: loopStartDelay, options: [.curveLinear], animations: {
+                labelAtIndex0.frame = CGRect(x: -self.rect0.size.width,y: 0,width: self.rect0.size.width,height: self.rect0.size.height)
+                labelAtIndex1.frame = CGRect(x: labelAtIndex0.frame.origin.x + labelAtIndex0.frame.size.width,y: 0,width: labelAtIndex1.frame.size.width,height: labelAtIndex1.frame.size.height)
+            }, completion: { finishied in
+                labelAtIndex0.frame = self.rect1
+                labelAtIndex1.frame = self.rect0
+                
+                self.labelArray[0] = labelAtIndex1
+                self.labelArray[1] = labelAtIndex0
+                self.animateLabelText()
+            })
+        } else {
+            self.layer.removeAllAnimations()
+        }
+    }
 }

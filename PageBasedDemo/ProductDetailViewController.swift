@@ -55,8 +55,7 @@ class ProductDetailViewController: UIViewController {
     @IBAction func btnShopInfoPress(_ sender: Any) {
         showShopInfoPopup()
     }
-    
-    
+
     @IBAction func btnOKPress(_ sender: Any) {
         hideShopInfoPopup()
     }

@@ -51,3 +51,29 @@ extension SelectCityViewController:UITableViewDelegate,UITableViewDataSource{
     }
 
 }
+
+
+// MARK: Parsing Deleagate
+
+extension SelectCityViewController : ParsingDelegate
+{
+    func success(WithResponse: Any)
+    {
+        //  http://stackoverflow.com/questions/40909979/how-to-get-array-from-dictionary-in-swift-3
+        stopActivityIndicator()
+        self.view.hideToastActivity()
+        print(WithResponse)
+    }
+    
+    func noInternetConnection()
+    {
+        self.view.hideToastActivity()
+        //self.view.makeToast(string.noInternetConnMsg)
+    }
+    func someThingWentWrong()
+    {
+        self.view.hideToastActivity()
+        //self.view.makeToast(string.someThingWrongMsg)
+    }
+}
+

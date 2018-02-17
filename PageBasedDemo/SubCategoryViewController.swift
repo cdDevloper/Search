@@ -12,6 +12,16 @@ class SubCategoryViewController: UIViewController {
     
     @IBOutlet weak var tblView: UITableView!
     @IBOutlet weak var lblTitle: UILabel!
+    
+    @IBOutlet weak var btnBack: UIButton!
+    @IBOutlet weak var btnSearch: UIButton!
+    @IBOutlet weak var btnSort: UIButton!
+    
+    
+    @IBOutlet weak var txtSerach: UITextField!
+    @IBOutlet weak var imgClear: UIImageView!
+    
+    
     var strTitle = ""
     var currentPage:Int = 0
     
@@ -21,14 +31,26 @@ class SubCategoryViewController: UIViewController {
         lblTitle.text = strTitle
         tblView.separatorStyle = .none
         
+         showTabOptions()
         
         if flgViewController == "offer"{
             tblView.estimatedRowHeight = 216.0
             tblView.rowHeight          = UITableViewAutomaticDimension
+            btnSearch.isHidden = true
+            btnSort.isHidden = true
+            
         }else{
             tblView.estimatedRowHeight = 44.0
             tblView.rowHeight          = UITableViewAutomaticDimension
         }
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.handleClearTap(_:)))
+        
+        imgClear.addGestureRecognizer(tapGesture)
+        imgClear.isUserInteractionEnabled = true
+        
+       
+
     }
     
     //Mark: Custum Methods
@@ -37,8 +59,39 @@ class SubCategoryViewController: UIViewController {
         print(currentPage)
     }
 
+    // function which is triggered when handleTap is called
+    func handleClearTap(_ sender: UITapGestureRecognizer) {
+        if txtSerach.text == ""{
+            showTabOptions()
+        }else{
+            txtSerach.text = ""
+        }
+    }
+    
+    func hideTabOption(){
+        btnBack.isHidden = true
+        btnSearch.isHidden = true
+        lblTitle.isHidden = true
+        
+        txtSerach.isHidden = false
+        imgClear.isHidden  = false
+        txtSerach.becomeFirstResponder()
+    }
+    
+    func showTabOptions(){
+        btnBack.isHidden = false
+        btnSearch.isHidden = false
+        lblTitle.isHidden = false
+        
+        txtSerach.isHidden = true
+        imgClear.isHidden  = true
+        txtSerach.resignFirstResponder()
+    }
+    
+    
      //Mark: IBAction Methods
     @IBAction func btnSearchPress(_ sender: Any) {
+         hideTabOption()
     }
     
     @IBAction func btnSortPress(_ sender: Any) {
